@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinematic Fashion Films & Photography | NYC</title>
     <meta name="description" content="Professional NYC lifestyle photography for content creators with 48hr delivery and 100+ photos per session">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold tracking-tighter text-white">SENTOE</a>
+                <a href="https://Dest-89.github.io/cinematic-fashion-films-photography-2025-06-19-qc9na" class="text-2xl font-bold tracking-tighter text-white hover:text-purple-400 transition-colors duration-300">SENTOE</a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Services</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
-                <button class="md:hidden text-gray-300 hover:text-white" @click="isOpen = !isOpen">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden text-gray-300 hover:text-white" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div class="md:hidden" x-show="isOpen" x-transition>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden">
                 <div class="py-4 space-y-4">
-                    <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#features" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">Services</a>
+                    <a href="#benefits" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">About</a>
+                    <a href="#faq" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded transition-all duration-300">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-gray-900/90 mix-blend-multiply"></div>
@@ -45,152 +64,276 @@
             <div class="container mx-auto px-6 py-24 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-                        Cinematic Fashion Films & Photography
+                        Elevate Your Vision Through Our Lens
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-                        Professional NYC lifestyle photography for content creators
+                        Premium NYC fashion photography and cinematography, delivering stunning visuals that capture your unique story and style
                     </p>
                     <a href="https://sentoefilms.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-full text-lg hover:scale-105 transform transition duration-300 ease-in-out shadow-lg hover:shadow-purple-500/25">
-                        Book Your Session
+                        Transform Your Vision Today
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 bg-gray-800">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                    Premium Photography Services
+                    Exceptional Photography Services
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl">
+                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl hover:shadow-purple-500/20">
                         <div class="text-purple-400 mb-6">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">NYC Based & Focused</h3>
-                        <p class="text-gray-400">Capturing the essence of New York City in every shot, with exclusive access to iconic locations.</p>
+                        <h3 class="text-xl font-semibold mb-4">NYC's Premier Locations</h3>
+                        <p class="text-gray-400">Access to exclusive rooftops, studios, and iconic NYC landmarks. We create stunning backdrops that elevate your brand's visual story.</p>
                     </div>
-                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl">
+                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl hover:shadow-purple-500/20">
                         <div class="text-purple-400 mb-6">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">48Hr Delivery</h3>
-                        <p class="text-gray-400">Quick turnaround time without compromising on quality. Your content, ready when you need it.</p>
+                        <h3 class="text-xl font-semibold mb-4">Lightning-Fast 48Hr Delivery</h3>
+                        <p class="text-gray-400">Professional editing and delivery within 48 hours. Perfect for content creators who need high-quality assets on a tight schedule.</p>
                     </div>
-                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl">
+                    <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition duration-300 ease-in-out shadow-xl hover:shadow-purple-500/20">
                         <div class="text-purple-400 mb-6">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">100+ Photos Per Session</h3>
-                        <p class="text-gray-400">Extensive collection of professionally edited photos to choose from for your content needs.</p>
+                        <h3 class="text-xl font-semibold mb-4">Extensive Photo Collection</h3>
+                        <p class="text-gray-400">Receive 100+ professionally edited photos per session, giving you weeks of content for your social media and marketing needs.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                    Why Choose Us
+                    The SENTOE Advantage
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-75 group-hover:opacity-100 transition duration-300 ease-in-out"></div>
                         <div class="relative p-8 bg-gray-800 rounded-2xl transform group-hover:-translate-y-1 transition duration-300 ease-in-out">
-                            <h3 class="text-xl font-semibold mb-4">Quick Turnaround</h3>
-                            <p class="text-gray-400">Get your content faster without sacrificing quality. Perfect for time-sensitive campaigns.</p>
+                            <h3 class="text-xl font-semibold mb-4">Industry-Leading Turnaround</h3>
+                            <p class="text-gray-400">48-hour delivery guarantee without compromising quality. Perfect for time-sensitive campaigns and social media content calendars.</p>
                         </div>
                     </div>
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-75 group-hover:opacity-100 transition duration-300 ease-in-out"></div>
                         <div class="relative p-8 bg-gray-800 rounded-2xl transform group-hover:-translate-y-1 transition duration-300 ease-in-out">
-                            <h3 class="text-xl font-semibold mb-4">Content Variety</h3>
-                            <p class="text-gray-400">Diverse range of shots and styles to keep your content fresh and engaging.</p>
+                            <h3 class="text-xl font-semibold mb-4">Diverse Content Portfolio</h3>
+                            <p class="text-gray-400">Multiple angles, poses, and lighting setups in every session. Create months of diverse content in just one shoot.</p>
                         </div>
                     </div>
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-75 group-hover:opacity-100 transition duration-300 ease-in-out"></div>
                         <div class="relative p-8 bg-gray-800 rounded-2xl transform group-hover:-translate-y-1 transition duration-300 ease-in-out">
-                            <h3 class="text-xl font-semibold mb-4">Style Consultation</h3>
-                            <p class="text-gray-400">Professional guidance to ensure your vision comes to life in every shot.</p>
+                            <h3 class="text-xl font-semibold mb-4">Expert Style Direction</h3>
+                            <p class="text-gray-400">Professional guidance on poses, expressions, and styling to ensure every shot aligns with your brand's aesthetic.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    Client Success Stories
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"SENTOE transformed my brand's visual identity. The quick turnaround and premium quality helped me maintain consistent content for my 500K+ followers. Worth every penny!"</p>
+                        <div class="text-purple-400">
+                            <p class="font-semibold">Sarah Chen</p>
+                            <p class="text-sm">Fashion Influencer, 500K+ Following</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"The team's attention to detail and creative direction exceeded our expectations. We got enough content for three months of marketing from just one session."</p>
+                        <div class="text-purple-400">
+                            <p class="font-semibold">Marcus Rodriguez</p>
+                            <p class="text-sm">Marketing Director, StyleCo</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"Professional, efficient, and incredibly talented. The 48-hour turnaround time is a game-changer for our social media strategy."</p>
+                        <div class="text-purple-400">
+                            <p class="font-semibold">Emma Thompson</p>
+                            <p class="text-sm">Social Media Manager, LuxeBrand</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"The exclusive NYC locations and creative direction helped us stand out in a crowded market. Our engagement increased by 300% after working with SENTOE."</p>
+                        <div class="text-purple-400">
+                            <p class="font-semibold">David Park</p>
+                            <p class="text-sm">Founder, Urban Aesthetics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    Our Story
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-8 text-gray-400">
+                    <p class="leading-relaxed">
+                        Founded in 2020, SENTOE emerged from a passion for capturing the essence of NYC's vibrant fashion scene. What began as a small studio in Brooklyn has grown into one of the city's most sought-after fashion photography services, trusted by influencers, brands, and creative professionals alike.
+                    </p>
+                    <p class="leading-relaxed">
+                        Our mission is to empower creators with stunning visuals that elevate their brand and captivate their audience. We believe in the power of authentic storytelling through imagery, combining technical excellence with creative vision to produce content that stands out in today's digital landscape.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
         <section id="faq" class="py-24 bg-gray-800">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                     Frequently Asked Questions
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-900 rounded-xl p-6" x-data="{ open: false }">
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300" x-data="{ open: false }">
                         <button class="flex justify-between items-center w-full text-left" @click="open = !open">
-                            <span class="text-lg font-semibold">What's included in a session?</span>
+                            <span class="text-lg font-semibold">What's included in a standard session?</span>
                             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div class="mt-4 text-gray-400" x-show="open" x-transition>
-                            Each session includes 100+ professionally edited photos, location scouting, style consultation, and delivery within 48 hours.
+                            Each session includes 100+ professionally edited photos, 2-hour shoot time, multiple location setups, style consultation, and delivery within 48 hours. We also provide guidance on poses and expressions throughout the shoot.
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300" x-data="{ open: false }">
+                        <button class="flex justify-between items-center w-full text-left" @click="open = !open">
+                            <span class="text-lg font-semibold">How does the 48-hour delivery work?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mt-4 text-gray-400" x-show="open" x-transition>
+                            After your session, our editing team begins work immediately. Within 48 hours, you'll receive a private gallery link with all your edited photos, ready for download in both web and print resolutions.
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300" x-data="{ open: false }">
+                        <button class="flex justify-between items-center w-full text-left" @click="open = !open">
+                            <span class="text-lg font-semibold">What about location options?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mt-4 text-gray-400" x-show="open" x-transition>
+                            We have exclusive access to rooftops, studios, and iconic NYC locations. During booking, we'll discuss your vision and recommend the best locations to achieve your desired aesthetic.
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300" x-data="{ open: false }">
+                        <button class="flex justify-between items-center w-full text-left" @click="open = !open">
+                            <span class="text-lg font-semibold">Do you provide props or styling?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mt-4 text-gray-400" x-show="open" x-transition>
+                            While clients typically bring their own wardrobe, we offer styling consultation and have a curated collection of props available. We can also connect you with our network of professional stylists.
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300" x-data="{ open: false }">
+                        <button class="flex justify-between items-center w-full text-left" @click="open = !open">
+                            <span class="text-lg font-semibold">What's your rescheduling policy?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mt-4 text-gray-400" x-show="open" x-transition>
+                            We understand plans change. Reschedule with 48 hours notice at no charge. Last-minute changes may incur a fee. Weather-related rescheduling is always free.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="py-24 bg-gray-900">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                    Ready to Create?
+                    Ready to Elevate Your Content?
                 </h2>
-                <p class="text-xl text-gray-400 mb-12">Let's bring your vision to life</p>
+                <p class="text-xl text-gray-400 mb-12">Let's create something extraordinary together</p>
                 <div class="flex flex-col items-center justify-center space-y-6">
-                    <a href="mailto:create@sentoefilms.com" class="text-xl text-purple-400 hover:text-purple-300 transition duration-300">
+                    <a href="mailto:create@sentoefilms.com" class="text-xl text-purple-400 hover:text-purple-300 transition duration-300 hover:scale-105">
                         create@sentoefilms.com
                     </a>
                     <a href="https://sentoefilms.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-full text-lg hover:scale-105 transform transition duration-300 ease-in-out shadow-lg hover:shadow-purple-500/25">
-                        Book Now
+                        Book Your Session Now
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">SENTOE</h3>
-                    <p class="text-gray-400">Premium NYC Photography Services</p>
+                    <p class="text-gray-400">Elevating brands through premium NYC photography</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#features" class="hover:text-white transition duration-300">Services</a></li>
-                        <li><a href="#benefits" class="hover:text-white transition duration-300">Benefits</a></li>
-                        <li><a href="#faq" class="hover:text-white transition duration-300">FAQ</a></li>
+                        <li><a href="#features" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Services</a></li>
+                        <li><a href="#benefits" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">About</a></li>
+                        <li><a href="#faq" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <a href="mailto:create@sentoefilms.com" class="text-gray-400 hover:text-white transition duration-300">
+                    <a href="mailto:create@sentoefilms.com" class="text-gray-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300">
                         create@sentoefilms.com
                     </a>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <h4 class="text-lg font-semibold mb-4">Legal & More</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://Dest-89.github.io/cinematic-fashion-films-photography-2025-06-19-qc9na/privacy.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Dest-89.github.io/cinematic-fashion-films-photography-2025-06-19-qc9na/terms.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Terms of Service</a></li>
+                        <li><a href="https://Dest-89.github.io/cinematic-fashion-films-photography-2025-06-19-qc9na/blog.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -199,5 +342,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
